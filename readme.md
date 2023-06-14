@@ -24,5 +24,5 @@
 
 ![List](https://github.com/Arnel1001/logApp-Llabores/blob/main/logApp-scaling-octo/List%20Page.png)
 
-<p align="center"># Created By:
-Marc Andrew Deloso</p>
+<p align="center"><strong># Created By:</strong></p>
+<p align="center"><strong>Marc Andrew Deloso</strong></p>
