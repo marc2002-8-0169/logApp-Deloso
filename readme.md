@@ -14,15 +14,15 @@
 
 ### Registration Page
 
-![Registration]()
+![Registration](https://github.com/marc2002-8-0169/logApp-Deloso/blob/master/logApp-scaling-octo/register-page.png)
 
 ### Login Page
 
-![Login]()
+![Login](https://github.com/marc2002-8-0169/logApp-Deloso/blob/master/logApp-scaling-octo/login-page.png)
 
 ### List Page
 
-![List]()
+![List](https://github.com/marc2002-8-0169/logApp-Deloso/blob/master/logApp-scaling-octo/list-page.png)
 
 <p align="center"><strong># Created By:</strong></p>
 <p align="center"><strong>Marc Andrew Deloso</strong></p>
