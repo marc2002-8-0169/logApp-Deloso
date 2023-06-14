@@ -3,7 +3,7 @@ require('config/config.php');
 require('config/db.php');
 
 // Create a query
-$query = "SELECT id, lastname, firstname, address, logdt FROM person ORDER BY logdt DESC";
+$query = "SELECT id, lastname, firstname, address, logdt FROM persons ORDER BY logdt DESC";
 
 //Execute the query
 $result = mysqli_query($conn, $query);

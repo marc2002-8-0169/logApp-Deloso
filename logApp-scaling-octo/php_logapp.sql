@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 06, 2023 at 11:11 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Host: 127.0.0.1:3306
+-- Generation Time: Jun 14, 2023 at 11:26 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `login_info`
+-- Database: `php_logapp`
 --
 
 -- --------------------------------------------------------
@@ -29,32 +29,34 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `login` (
   `id` int(11) NOT NULL,
-  `username` varchar(45) NOT NULL,
-  `password` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `person`
+-- Table structure for table `persons`
 --
 
-CREATE TABLE `person` (
+CREATE TABLE `persons` (
   `id` int(11) NOT NULL,
-  `firstname` varchar(45) NOT NULL,
-  `lastname` varchar(45) NOT NULL,
-  `address` varchar(45) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
+  `firstname` varchar(100) NOT NULL,
+  `address` varchar(100) NOT NULL,
   `logdt` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `person`
+-- Dumping data for table `persons`
 --
 
-INSERT INTO `person` (`id`, `firstname`, `lastname`, `address`, `logdt`) VALUES
-(1, 'reid', 'james', 'somewhere', '2023-06-06 16:32:03'),
-(2, 'reid', 'james', 'somewhere', '2023-06-06 16:37:40'),
-(3, 'reid', 'james', 'somewhere', '2023-06-06 17:08:17');
+INSERT INTO `persons` (`id`, `lastname`, `firstname`, `address`, `logdt`) VALUES
+(6, 'ca', 'reyes', 'palawan', '2023-06-14 17:20:49'),
+(7, 'Andrew', 'Marc', 'West marangas bataraza', '2023-06-14 17:21:45'),
+(8, 'Andrew', 'Marc', 'West marangas bataraza', '2023-06-14 17:21:47'),
+(9, 'Andrew', 'Marc', 'West marangas bataraza', '2023-06-14 17:21:49'),
+(10, 'Andrew', 'Marc', 'West marangas bataraza', '2023-06-14 17:21:50');
 
 --
 -- Indexes for dumped tables
@@ -67,9 +69,9 @@ ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `person`
+-- Indexes for table `persons`
 --
-ALTER TABLE `person`
+ALTER TABLE `persons`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -83,10 +85,10 @@ ALTER TABLE `login`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `person`
+-- AUTO_INCREMENT for table `persons`
 --
-ALTER TABLE `person`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+ALTER TABLE `persons`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
